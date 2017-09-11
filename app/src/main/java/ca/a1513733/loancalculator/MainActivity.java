@@ -11,13 +11,18 @@ public class MainActivity extends AppCompatActivity {
 
     EditText etLoanAmt, etYears, etRate;
     TextView result;
-    double amt, year, rate;
+    LoanCalculator loanCalc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_layout);
 
+        loanCalc = new LoanCalculator();
+
+    }
+
+    private void getViewValues() {
         etLoanAmt = (EditText) findViewById(R.id.loanAmt);
         etYears = (EditText) findViewById(R.id.years);
         etYears.setFilters(new InputFilter[] {new InputFilter.LengthFilter(3)});
@@ -27,11 +32,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void calcLoan(View v) {
-        amt = Double.parseDouble(etLoanAmt.getText().toString());
-        year = Double.parseDouble(etYears.getText().toString());
-        rate = Double.parseDouble(etRate.getText().toString());
-        result.setText(Double.toString(amt*(1+(year*rate))));
-        //a=loan (1+rt)
+        getViewValues();
+        loanCalc.setLoanAmount(Double.parseDouble(etLoanAmt.getText().toString()));
+        loanCalc.setNumberOfYears(Integer.parseInt(etYears.getText().toString()));
+        loanCalc.setYearlyInterestRate(Double.parseDouble(etRate.getText().toString()));
+
+    }
+
+    public void displayLoanInfo() {
+
     }
 
 }

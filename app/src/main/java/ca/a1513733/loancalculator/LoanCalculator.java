@@ -1,4 +1,4 @@
-package abcbank;
+package ca.a1513733.loancalculator;
 
 	public class LoanCalculator
 {
