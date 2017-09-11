@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="appStyle">
+        <item name="android:Background">#000</item>
+    </style>
+</resources>
