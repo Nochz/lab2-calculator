@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         yrInterest.setText(loanCalc.getYearlyInterestRate()+"");
         tlInterest.setText(loanCalc.getTotalInterest()+"");
         payment.setText(loanCalc.getMonthlyPayment()+"");
-        
+
     }
 
 }
