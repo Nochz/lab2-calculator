@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="appStyle">
-        <item name="android:Background">#000</item>
+    <style name="textStyle">
+        <item name="android:textColor">#00ccff</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="outTextStyle">
+        <item name="android:textColor">#00ccff</item>
+        <item name="android:background">#666699</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="appBackground">
+        <item name="android:background">#19334d</item>
+    </style>
+
+    <style name="numStyle">
+        <item name="android:textColor">#00ccff</item>
+    </style>
+
+    <style name="btnStyle">
+        <item name="android:background">#666699</item>
+        <item name="android:textColor"></item>
     </style>
 </resources>

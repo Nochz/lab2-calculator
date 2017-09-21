@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    style="@style/appBackground">
 
 
     <LinearLayout
@@ -17,22 +17,25 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:textSize="50dp"
-            android:text="00.00" />
+            android:text="00.00"
+            style="@style/numStyle"/>
     </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10dp">
 
         <TextView
-            style="@style/appStyle"
+            style="@style/textStyle"
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Loan Amount" />
+
 
         <EditText
             android:id="@+id/loanAmt"
@@ -40,20 +43,23 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            style="@style/numStyle"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10dp">
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Number of Years" />
+            android:text="Number of Years"
+            style="@style/textStyle" />
 
         <EditText
             android:id="@+id/years"
@@ -61,21 +67,24 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            style="@style/numStyle"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10dp">
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Yearly Interest Rate" />
+            android:text="Yearly Interest Rate"
+            style="@style/textStyle"/>
 
         <EditText
             android:id="@+id/rate"
@@ -83,21 +92,24 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:ems="10"
-            android:inputType="numberDecimal" />
+            android:inputType="numberDecimal"
+            style="@style/numStyle"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_weight="1"
             android:text="Calculate"
-            android:onClick="calcLoan"/>
+            android:onClick="calcLoan"
+            style="@style/btnStyle"/>
 
     </LinearLayout>
 
@@ -106,7 +118,8 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_gravity="center"
-        android:padding="50dp">
+        android:padding="50dp"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -118,7 +131,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Loan Amount" />
+                android:text="Loan Amount"
+                style="@style/outTextStyle"/>
 
             <TextView
                 android:id="@+id/amtText"
@@ -126,7 +140,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="0.0"
-                android:gravity="right"/>
+                android:gravity="right"
+                style="@style/outTextStyle"/>
         </LinearLayout>
 
         <LinearLayout
@@ -139,7 +154,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Years" />
+                android:text="Years"
+                style="@style/outTextStyle"/>
 
             <TextView
                 android:id="@+id/yearsText"
@@ -147,7 +163,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="0"
-                android:gravity="right"/>
+                android:gravity="right"
+                style="@style/outTextStyle"/>
         </LinearLayout>
 
         <LinearLayout
@@ -160,7 +177,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Yearly Interest" />
+                android:text="Yearly Interest"
+                style="@style/outTextStyle"/>
 
             <TextView
                 android:id="@+id/yrInterestText"
@@ -168,7 +186,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="0.0"
-                android:gravity="right"/>
+                android:gravity="right"
+                style="@style/outTextStyle"/>
         </LinearLayout>
 
         <LinearLayout
@@ -181,7 +200,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Monthly Payment" />
+                android:text="Monthly Payment"
+                style="@style/outTextStyle"/>
 
             <TextView
                 android:id="@+id/paymentText"
@@ -189,7 +209,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="0.0"
-                android:gravity="right"/>
+                android:gravity="right"
+                style="@style/outTextStyle"/>
         </LinearLayout>
 
         <LinearLayout
@@ -202,7 +223,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Total Interest" />
+                android:text="Total Interest"
+                style="@style/outTextStyle"/>
 
             <TextView
                 android:id="@+id/tlInterestText"
@@ -210,7 +232,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="0.0"
-                android:gravity="right"/>
+                android:gravity="right"
+                style="@style/outTextStyle"/>
         </LinearLayout>
     </LinearLayout>
 
