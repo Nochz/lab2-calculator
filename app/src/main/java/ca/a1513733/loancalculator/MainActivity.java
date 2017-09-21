@@ -8,7 +8,7 @@ import android.widget.TextView;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-
+    // Vairables to store the field values from view
     EditText etLoanAmt, etYears, etRate;
     TextView amt,years, yrInterest;
     TextView tlInterest, payment;
