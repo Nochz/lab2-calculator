@@ -21,6 +21,5 @@
 
     <style name="btnStyle">
         <item name="android:background">#666699</item>
-        <item name="android:textColor"></item>
     </style>
 </resources>
