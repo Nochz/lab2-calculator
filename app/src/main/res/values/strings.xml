@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">LoanCalculator</string>
+    <string name="loan_amt">Loan Amount</string>
+    <string name="yrlabel">Years</string>
+    <string name="num_years">Number of Years</string>
+    <string name="t_interest">Total Interest</string>
+    <string name="y_interest">Yearly Interest</string>
+    <string name="payment">Monthly Payment</string>
+    <string name="interest_rate">Yearly Interest Rate</string>
+    <string name="calc">Calculate</string>
 </resources>

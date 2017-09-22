@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculatrice de Prêt</string>
+    <string name="yrlabel">Années</string>
+    <string name="loan_amt">Total du Prêt</string>
+    <string name="num_years">Nombre des Années</string>
+    <string name="payment">Paiement Mensuel</string>
+    <string name="t_interest">Intérêt Total</string>
+    <string name="y_interest">Intérêt Annuel</string>
+    <string name="interest_rate">Taux d\'Intérêt Annuel</string>
+    <string name="calc">Calculer</string>
+</resources>
